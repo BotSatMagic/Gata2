@@ -183,21 +183,21 @@ global.lolkeysapi = ['85faf717d0545d14074659ad']
 
 //━━━━━━━━━━━━━━ img ━━━━━━━━━
 
-global.img = './media/menus/Menu1.jpg'
-global.img2 = './media/menus/Menu1.jpg'
+global.img = 'https://raw.githubusercontent.com/BotSatMagic/Gata2/master/media/menus/Menu1.jpg'
+global.img2 = 'https://raw.githubusercontent.com/BotSatMagic/Gata2/master/media/menus/Menu1.jpg'
 
-global.img3 = './media/menus/Menu1.jpg' //prem
-global.img4 = './media/menus/Menu1.jpg' //prem
+global.img3 = 'https://raw.githubusercontent.com/BotSatMagic/Gata2/master/media/menus/Menu1.jpg' //prem
+global.img4 = 'https://raw.githubusercontent.com/BotSatMagic/Gata2/master/media/menus/Menu1.jpg' //prem
 
-global.img5 = './media/menus/Menu1.jpg'
-global.img6 = './media/menus/Menu1.jpg'
-global.img7 = './media/menus/Menu1.jpg'
-global.img8 = './media/menus/Menu1.jpg'
-global.img9 = './media/menus/Menu1.jpg'
+global.img5 = 'https://raw.githubusercontent.com/BotSatMagic/Gata2/master/media/menus/Menu1.jpg'
+global.img6 = 'https://raw.githubusercontent.com/BotSatMagic/Gata2/master/media/menus/Menu1.jpg'
+global.img7 = 'https://raw.githubusercontent.com/BotSatMagic/Gata2/master/media/menus/Menu1.jpg'
+global.img8 = 'https://raw.githubusercontent.com/BotSatMagic/Gata2/master/media/menus/Menu1.jpg'
+global.img9 = 'https://raw.githubusercontent.com/BotSatMagic/Gata2/master/media/menus/Menu1.jpg'
 
-global.img10 = './media/menus/Menu1.jpg'
-global.img11 = './media/menus/Menu1.jpg'
-global.img12 = './media/menus/Menu1.jpg'
+global.img10 = 'https://raw.githubusercontent.com/BotSatMagic/Gata2/master/media/menus/Menu1.jpg'
+global.img11 = 'https://raw.githubusercontent.com/BotSatMagic/Gata2/master/media/menus/Menu1.jpg'
+global.img12 = 'https://raw.githubusercontent.com/BotSatMagic/Gata2/master/media/menus/Menu1.jpg'
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
