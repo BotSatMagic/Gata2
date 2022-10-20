@@ -1,8 +1,19 @@
+/*
 import fs from 'fs'
 let handler = async (m, { conn, usedPrefix }) => {
 var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
 var document = doc[Math.floor(Math.random() * doc.length)]    
-let text = `𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💖🐈\nWa.me/593993684821\n𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 *2* 💖🐈\nWa.me/50498965677\n𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 *3*💖🐈\nWa.me/51993042301\n\n🧡 *Eso son los contactos para ti.*\n💜 *That's the contacts for you.*`.trim()   
+let text = `
+𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💖🐈
+Wa.me/593993684821
+
+𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 *2* 💖🐈
+Wa.me/50498965677
+
+𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 *3* 💖🐈
+Wa.me/51993042301
+
+🧡 *Eso son los contactos para ti.*\n💜 *That's the contacts for you.*`.trim()   
 let buttonMessage= {
 'document': { url: `${md}` },
 'mimetype': `application/${document}`,
@@ -29,9 +40,9 @@ let buttonMessage= {
 'headerType': 6 }
 
 await conn.sendMessage(m.chat, buttonMessage, { quoted: m })
-await m.reply(`𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💖🐈 Wa.me/593993684821\n𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 *2* 💖🐈 Wa.me/50498965677\n𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 *3* 💖🐈 Wa.me/51993042301`)  
-//const data = global.owner.filter(([id, isCreator]) => id && isCreator)
-//await conn.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)
+//await m.reply(`𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💖🐈 Wa.me/593993684821\n𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 *2* 💖🐈 Wa.me/50498965677\n𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 *3* 💖🐈 Wa.me/51993042301`)  
+const data = global.owner.filter(([id, isCreator]) => id && isCreator)
+await conn.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)
   
 let pp = './media/menus/Menu2.jpg'
 let str = `${wm}`
@@ -45,3 +56,4 @@ handler.help = ['owner', 'creator']
 handler.tags = ['info']
 handler.command = /^(contacto|owner|creator|propietario|dueño|dueña|propietaria|dueño|creadora|creador)$/i
 export default handler 
+*/

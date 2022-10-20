@@ -1,3 +1,4 @@
+/*
 let media = './media/menus/Menuvid2.mp4'
 let handler = async (m, { conn, command }) => {
 let str = `
@@ -26,3 +27,4 @@ conn.sendHydrated(m.chat, str, wm, media, 'https://github.com/GataNina-Li/GataBo
 handler.command = /^cuentasoficiales|gataig|cuentasgb|cuentagb|accounts|gataaccounts|account|iggata|cuentasdegata|cuentasdegatabot|cuentagatabot|cuentasgatabot$/i
 handler.exp = 35
 export default handler
+*/

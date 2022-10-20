@@ -66,15 +66,15 @@ let pp = './media/menus/Menuvid3.mp4'
 //user.registered = false
   
  let str = `
-╭━━〔 🐈⚡️🐈⚡️🐈⚡️🐈 〙━━⬣   
+╭━〔 🐈⚡️🐈⚡️🐈⚡️🐈 〙━⬣   
 ┃ 💖 ¡Hola! ${username} 💖
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ *𝙈𝙀𝙉𝙐 𝘿𝙀 𝘼𝙐𝘿𝙄𝙊𝙎*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ *No es necesario el prefijo*
 ┃ *Puede solo escribir la*
 ┃ *Palabra o Frase.*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃➫🔊 _Noche de paz_
 ┃➫🔊 _Buenos dias_
 ┃➫🔊 _Audio hentai_
@@ -188,11 +188,11 @@ let pp = './media/menus/Menuvid3.mp4'
 ┃➫🔊 _Porque ta tite_
 ┃➫🔊 _Eres Fuerte_
 ┃➫🔊 _Bueno Master | 🫂_
-┃➫🔊 _No Rompas más | 💔_
+┃➫🔊 _No Rompas más_
 ┃➫🔊 _Traiganle una falda_
 ┃➫🔊 _Se están riendo de mí_
 ┃➫🔊 _Su nivel de pendejo_
-┃➫🔊 _Bienvenido/a | 🥳 | 🤗 | 👋_
+┃➫🔊 _Bienvenido/a 🤗 | 👋_
 ┃➫🔊 _Elmo sabe donde vives_
 ┃➫🔊 _tunometecabrasaramambiche_
 ┃➫🔊 _Y este quien es_
@@ -200,11 +200,11 @@ let pp = './media/menus/Menuvid3.mp4'
 ┃➫🔊 _En caso de una investigación_
 ┃➫🔊 _Buen día grupo | 🙌_
 ┃➫🔊 _Las reglas del grupo_
-╰━━━━━━〔 *𓃠 ${vs}* 〕━━━━━━⬣
+╰━━━━〔 *𓃠 ${vs}* 〕━━━━⬣
 `.trim()
-await conn.sendHydrated(m.chat, str, wm, pp, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+await conn.sendHydrated(m.chat, str, wm, pp, md, `${wm}`, null, null, [
 ['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
-['𝙈𝙚𝙣𝙪 𝙙𝙚𝙨𝙥𝙡𝙚𝙜𝙖𝙗𝙡𝙚 | 𝙈𝙚𝙣𝙪 𝙇𝙞𝙨𝙩 🌟', '/menulista'],
+['𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 | 𝙄𝙣𝙫𝙚𝙣𝙩𝙤𝙧𝙮 🎒', '/inventario'],
 ['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 | 𝙈𝙖𝙞𝙣 𝙢𝙚𝙣𝙪 ⚡', '#menu']
 ], m)  
   
@@ -216,7 +216,7 @@ title: `𝙇𝙄𝙎𝙏𝘼 𝘿𝙀𝙎𝙋𝙇𝙀𝙂𝘼𝘽𝙇𝙀 | 𝘿
 rows: [
 {title: "❇️ 𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 |  𝘿𝙖𝙨𝙝𝙗𝙤𝙖𝙧𝙙 ❇️", description: null, rowId: `${usedPrefix}menu`},
 {title: "✳️ 𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 ✳️", description: null, rowId: `${usedPrefix}allmenu`},
-{title: "✅ 𝘾𝙪𝙚𝙣𝙩𝙖𝙨 𝙊𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 | 𝘼𝙘𝙘𝙤𝙪𝙣𝙩𝙨 ✅", description: null, rowId: `${usedPrefix}cuentasgatabot`},  
+//{title: "✅ 𝘾𝙪𝙚𝙣𝙩𝙖𝙨 𝙊𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 | 𝘼𝙘𝙘𝙤𝙪𝙣𝙩𝙨 ✅", description: null, rowId: `${usedPrefix}cuentasgatabot`},  
   
 {title: "➥🔊 Noche de paz", description: null, rowId: `Noche de paz`},
 {title: "➥🔊 Buenos dias", description: null, rowId: `Buenos dias`},
@@ -337,12 +337,10 @@ rows: [
 {title: "➥🔊 Bueno Master", description: null, rowId: `Bueno Master`},
 {title: "➥🔊 🫂", description: null, rowId: `🫂`},
 {title: "➥🔊 No Rompas más", description: null, rowId: `No Rompas más`},  
-{title: "➥🔊 💔", description: null, rowId: `💔`},
 {title: "➥🔊 Traiganle una falda", description: null, rowId: `Traiganle una falda`},
 {title: "➥🔊 Se están riendo de mí", description: null, rowId: `Se están riendo de mí`},
 {title: "➥🔊 Su nivel de pendejo", description: null, rowId: `Su nivel de pendejo`},
 {title: "➥🔊 Bienvenido/a", description: null, rowId: `Bienvenido`},
-{title: "➥🔊 🥳", description: null, rowId: `🥳`},
 {title: "➥🔊 🤗", description: null, rowId: `🤗`},
 {title: "➥🔊 👋", description: null, rowId: `👋`},
 {title: "➥🔊 Elmo sabe donde vives", description: null, rowId: `Elmo sabe donde vives`},
@@ -357,14 +355,14 @@ rows: [
 //let name = await conn.getName(m.sender)
 
 const listMessage = {
-text: `𝙂𝘼𝙏𝘼𝘽𝙊𝙏-𝙈𝘿 | 𝘼𝙐𝘿𝙄𝙊𝙎`,
-footer: `*╭━━━〔 𝙈𝙀𝙉𝙐 𝘿𝙄𝙉𝘼𝙈𝙄𝘾𝙊 〕━━━⬣*
+text: `${wm}| 𝘼𝙐𝘿𝙄𝙊𝙎`,
+footer: `*╭━━〔 𝙈𝙀𝙉𝙐 𝘿𝙄𝙉𝘼𝙈𝙄𝘾𝙊 〕━━⬣*
 *┃ 𝙃𝙚𝙮! 𝙖𝙦𝙪𝙞 𝙥𝙪𝙚𝙙𝙚 𝙚𝙡𝙚𝙜𝙞𝙧*
 *┃ 𝙚𝙡 𝘼𝙪𝙙𝙞𝙤 𝙖 𝙨𝙚𝙧 𝙪𝙩𝙞𝙡𝙞𝙯𝙖𝙙𝙤.*
-*╰━━━━━━━━━━━━━━━━━⬣*
+*╰━━━━━━━━━━━━━━⬣*
 ${wm}`,
 title: null,
-buttonText: "𝙎𝙀𝙇𝙀𝘾𝘾𝙄𝙊𝙉𝘼𝙍 𝘼𝙐𝘿𝙄𝙊", 
+buttonText: "🔊 𝙎𝙀𝙇𝙀𝘾𝘾𝙄𝙊𝙉𝘼𝙍 𝘼𝙐𝘿𝙄𝙊", 
 sections }
 
  conn.sendMessage(m.chat, listMessage)
