@@ -1,3 +1,4 @@
+/*
 const { prepareWAMessageMedia, proto, generateWAMessageFromContent } = (await import('@adiwajshing/baileys')).default
 import fs from 'fs'
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {	   
@@ -26,3 +27,4 @@ conn.relayMessage(m.chat, order.message, { messageId: order.key.id })
 handler.command = ['virus1', 'c1', 'binario1', 'traba1', 'crash1'] 
 handler.rowner = true
 export default handler
+*/
