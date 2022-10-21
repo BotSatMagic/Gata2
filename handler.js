@@ -909,7 +909,7 @@ export async function handler(chatUpdate) {
 		if (!('antifake' in chat)) chat.antifake = false
 		if (!('reaction' in chat)) chat.reaction = true    
                 if (!('viewonce' in chat)) chat.viewonce = false                    
-                if (!('antitoxic' in chat)) chat.antitoxic = true  
+                if (!('antitoxic' in chat)) chat.antitoxic = false  
 		if (!('antiSpam' in chat)) chat.antiSpam = true  
                 if (!isNumber(chat.expired)) chat.expired = 0
                     
@@ -923,7 +923,7 @@ export async function handler(chatUpdate) {
                     sPromote: '',
                     sDemote: '', 
                     delete: true,
-                    modohorny: true,
+                    modohorny: false,
                     stickers: true,
                     autosticker: false,
                     audios: true,
@@ -939,7 +939,7 @@ export async function handler(chatUpdate) {
 		    antifake: false,
 		    reaction: true,
                     viewonce: false,
-                    antitoxic: true,
+                    antitoxic: false,
 		    antiSpam: true,
                     expired: 0,
                 }
@@ -1312,14 +1312,11 @@ export async function participantsUpdate({ id, participants, action }) {
                         pp = await this.profilePictureUrl(user, 'image')
                     } catch (e) {
                     } finally {
-                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝙂𝙧𝙪𝙥𝙤 𝙂𝙚𝙣𝙞𝙖𝙡 | 𝘾𝙤𝙤𝙡 𝙂𝙧𝙤𝙪𝙥 😼*') :
-                            (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', await this.getName(user)) //.replace('@user', '@' + user.split('@')[0])
-                            let apii = await this.getFile(pp)
-                            this.sendHydrated(id, text, groupMetadata.subject, apii.data, `${wm}`, `${wm}`, null, null, [
-                                [(action == 'add' ? '🅤🅝🅞 🅜🅐🅢 🅐🅛 🅖🅐🅝🅐🅓🅞  🥳 | 𝙃𝙞!!' : 'A̳̳D̳̳I̳̳O̳̳S̳̳ D̳̳R̳̳A̳̳M̳̳A̳̳T̳̳I̳̳C̳̳O̳̳ 🧐 | 𝘽𝙮𝙚'), (action == 'add' ? '#welcomegc' : '#byegc')]    
-                            ['💖 𝙄𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪 | 𝙂𝙤 𝙈𝙚𝙣𝙪', '/menu']
-                            ], '', { mentions: [user]})
-                           }
+                        let apii = await this.getFile(pp)
+                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝚂𝙸𝙽 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽*') :
+                              (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
+                        this.sendButton(id, text, groupMetadata.subject, apii.data, [[(action == 'add' ? '💫 𝙱𝙸𝙴𝙽𝚅𝙴𝙽𝙸𝙳𝙾 💫' : '☠ 𝙰𝙳𝙸𝙾𝚂 ☠'), (action == 'add' ? '#welcomegc' : '#byegc')], ['♦ 𝙼𝙴𝙽𝚄 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 ♦', `#menu`]], null, {mentions: this.parseMention(text)})
+                              }
                 }
             }
             break
